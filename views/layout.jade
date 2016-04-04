@@ -1,0 +1,16 @@
+doctype html
+html
+	head
+		title Warlord
+		base(href="/")
+		meta(author="Milan Ravilic")
+		meta(description="")
+		link(rel='stylesheet', href='/css/styles.min.css')
+	body
+		if !!bootstrappedUser
+			script.
+				window.bootstrappedUserObject = !{JSON.stringify(bootstrappedUser)};
+
+		block content
+
+		script(src='/js/main.min.js')

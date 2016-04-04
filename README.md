@@ -1,0 +1,1 @@
+My simple skeleton node mongoose setup with passport local strategy.
